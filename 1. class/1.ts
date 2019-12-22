@@ -1,5 +1,5 @@
 /**
- * public  自己  自己的子类  其它都可以访问
+ * public  自己、自己的子类以及其它都可以访问
  */
 class Water {
 
@@ -7,7 +7,7 @@ class Water {
 class Animal {
     public age: number;
     public name: string;
-    //类的依赖关系在代码中的表示是属性关系 ，这就是依赖关系 
+    // 类的依赖关系在代码中的表示是属性关系
     public water: Water;
     public eat() {
 
@@ -17,7 +17,7 @@ class Animal {
     }
 }
 /**
- * 接口是行为的抽向
+ * 接口是行为的抽象
  */
 interface Eggs {
     giveEggs(): number;
