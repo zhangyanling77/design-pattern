@@ -29,10 +29,10 @@ class LocalStorage implements IStorage {
 let local = new LocalStorage();
 class MysqlStorage implements IStorage {
     save(key: string, value: any): void {
-        //mysql.setItem(key, value);
+        mysql.setItem(key, value);
     }
     read(key: string) {
-        //return mysql.getItem(key);
+        return mysql.getItem(key);
     }
 }
 let mysqlStorage = new MysqlStorage();
