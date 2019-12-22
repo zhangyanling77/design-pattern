@@ -5,11 +5,11 @@ export { }
  * 2. 可以保护类的隐私
  */
 class Animal {
-    //public 指的是公有属性，此属性可以在本类中，子类中和其它类中访问
+    // public 指的是公有属性，此属性可以在本类中，子类中和其它类中访问
     public name: string;
-    //protected 受保护的属性，此属性可以在本类中和子类中被访问，其它 类不让
+    // protected 受保护的属性，此属性可以在本类中和子类中被访问，其它类不可以
     protected age: number;
-    //private 受保护的，被保护在类的内部可以访问，子类和其它 类都无法访问
+    // private 受保护的，被保护在类的内部可以访问，子类和其它类都无法访问
     private weight: number;
     constructor(name: string, age: number, weight: number) {
         this.name = name;
@@ -18,7 +18,6 @@ class Animal {
     }
 }
 class Person extends Animal {
-    //我这个人的账户余额 私有的，只有自己能访问
     private balance: number;
     constructor(name: string, age: number, weight: number, balance: number) {
         super(name, age, weight);
@@ -31,8 +30,8 @@ class Person extends Animal {
         return this.age;
     }
     getWeight() {
-        //Property 'weight' is private and only accessible within class 'Animal'.
-        //return this.weight;
+        // Property 'weight' is private and only accessible within class 'Animal'.
+        return this.weight;
     }
 }
 let p1 = new Person('zhufeng', 10, 100, 1000);
