@@ -1,4 +1,4 @@
-const { Sequelize, Model, DataTypes } = require('sequelize');
+const { Sequelize, Model, DataTypes } = require('sequelize'); // 操作数据库的工具
 const sequelize = new Sequelize('sqlite::memory:');
 //定义表模型 ，它是一个关系型 数据库的的ORM映射工具
 class User2 extends Model { }
@@ -9,7 +9,7 @@ User2.init({
 
 sequelize.sync()
     .then(() => User2.create({
-        username: 'zhufeng'
+        username: 'zhangyanling'
     }))
     .then(result => {
         console.log(result.toJSON());

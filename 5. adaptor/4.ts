@@ -1,5 +1,5 @@
 /**
- * 以前node里全部回调
+ * 以前在node里全部使用回调
  */
 export { }
 let BluebirdPromise = require('bluebird');

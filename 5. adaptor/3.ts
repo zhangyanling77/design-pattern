@@ -1,6 +1,6 @@
 export { }
 /**
- * 原来项目里全用的jquery  $.ajax 
+ * jquery  $.ajax 
  */
 let $ = require('jquery');
 let axios = require('axios');

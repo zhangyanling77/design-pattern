@@ -1,6 +1,5 @@
 
 
-//import axios from 'axios';
 const url = require('url');
 axios({
     url: 'http://localhost:8080/api/user?id=5',
