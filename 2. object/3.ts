@@ -31,10 +31,10 @@ class Person extends Animal {
     }
     getWeight() {
         // Property 'weight' is private and only accessible within class 'Animal'.
-        return this.weight;
+        // return this.weight;
     }
 }
-let p1 = new Person('zhufeng', 10, 100, 1000);
+let p1 = new Person('zhangyanling', 10, 100, 1000);
 p1.name;
 //p1.age;
 //p1.weight;

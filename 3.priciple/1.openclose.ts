@@ -10,7 +10,7 @@ class Product {
     constructor(public name: string, public price: number) {
 
     }
-    //不同的顾客有不同的等级，普通会员 VIP会员 普通顾客，不同的等级打折不一样
+    // 不同的顾客有不同的等级，普通会员 VIP会员 普通顾客，不同的等级打折不一样
     cost(customer: Customer) {
         switch (customer.rank) {
             case 'member':
@@ -33,4 +33,4 @@ console.log(product.cost(member));
 console.log(product.cost(vip));
 console.log(product.cost(guest));
 
-//多态是一个功能，它的实现是要靠继承的, 多态是要靠继承来实现，没能  继承就没有多态
+// 多态是一个功能，它的实现是要靠继承的, 多态是要靠继承来实现，没有继承就没有多态

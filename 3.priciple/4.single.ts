@@ -5,7 +5,7 @@
  */
 //Java
 export { }
-//拆的过细就有可能减低内聚性
+// 拆的过细就有可能减低内聚性，所以也不一定好
 class Product {
     public name: string;
     public price: number;
@@ -20,4 +20,4 @@ class Category {
     public name: string;
     public icon: string;
 }
-// 拆的越细越好吗？
+
