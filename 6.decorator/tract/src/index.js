@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// 在react的  react-redux 高阶组件里就是装饰器
 
 function connect(mapStateToProps, mapDispatchToProps) {
     return function (Target) {
